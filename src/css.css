@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+#taiChi {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#taiChi::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#taiChi::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+  #taiChi {
+    top: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
